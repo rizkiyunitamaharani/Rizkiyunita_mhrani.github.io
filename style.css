@@ -1,0 +1,107 @@
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fbfd;
+    }
+    /* Banner */
+    .banner {
+      background: linear-gradient(120deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 60px 30px;
+      border-radius: 20px;
+    }
+    /* Artikel */
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card-article {
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform .3s;
+    }
+    .card-article:hover {
+      transform: translateY(-5px);
+    }
+    .card-article .title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .card-article .excerpt {
+      font-size: .9rem;
+      color: #555;
+    }
+    .card-article .tags .tag {
+      background: #e3f2fd;
+      color: #0d6efd;
+      padding: 3px 8px;
+      border-radius: 10px;
+      font-size: .8rem;
+      margin-right: 5px;
+    }
+    .card-article .read {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .card-article .read:hover {
+      text-decoration: underline;
+    }
+    /* Hubungi Saya */
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact-section form input,
+    .contact-section form textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+    }
+    .btn-custom {
+      background: linear-gradient(90deg,#4facfe,#00f2fe);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+    }
+    .btn-custom:hover {
+      opacity: 0.9;
+    }
+    .contact-right .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .contact-right .icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* Preview form */
+    #preview {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #e8f5e9;
+      border: 1px solid #c8e6c9;
+    }

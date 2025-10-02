@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Web</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">My Personal Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#riwayat-pendidikan">Riwayat Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hubungi">Hubungi Saya</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="container my-5">
+    <div class="banner">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h5>Selamat datang di Personal Website</h5>
+          <h1><b>Rizki Yunita Maharani</b></h1>
+          <p class="mb-0">Siswa Jurusan Rekayasa Perangkat Lunak</p>
+          <p>SMK Negeri 8 Jember</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="ft.jpg" class="img-fluid shadow-lg rounded-5" alt="Foto Profile" width="320">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Riwayat Pendidikan & Keahlian -->
+  <section class="my-5 container">
+    <div class="row g-4">
+      <!-- Riwayat Pendidikan -->
+      <div class="col-md-6" id="riwayat-pendidikan">
+        <div class="card rounded-4 border-warning">
+          <div class="card-body p-4">
+            <h3 class="mb-4">Riwayat Pendidikan</h3>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5>SMKN 8 Jember</h5>
+                <p>Jurusan Rekayasa Perangkat Lunak</p>
+                <small>2024 - sekarang</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5>SMPN 1 Umbulsari</h5>
+                <small>2012 - 2015</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Keahlian -->
+      <div class="col-md-6" id="keahlian">
+        <div class="card rounded-4 border-primary">
+          <div class="card-body p-4">
+            <h3 class="mb-4">Keahlian</h3>
+            <p><b>Java</b></p>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%">80%</div>
+            </div>
+            <p><b>HTML / CSS</b></p>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 90%">90%</div>
+            </div>
+            <p><b>Bootstrap</b></p>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artikel -->
+  <section id="artikel" class="container my-5">
+    <h2 class="mb-3">Artikel Terbaru</h2>
+    <div class="articles">
+      <article class="card-article" aria-labelledby="a1">
+        <img src="ft1.png" class="img-fluid rounded mb-3" alt="Artikel 1">
+        <div class="title" id="a1">Membangun Portofolio Web Modern</div>
+        <div class="excerpt">Langkah-langkah membuat portofolio ringan, responsif, dan mudah diperbarui.</div>
+        <div class="tags">
+          <span class="tag">#web</span>
+          <span class="tag">#frontend</span>
+          <span class="tag">#tips</span>
+        </div>
+        <a class="read" href="#">Baca selanjutnya</a>
+      </article>
+      <article class="card-article" aria-labelledby="a2">
+        <img src="ft2.png" class="img-fluid rounded mb-3" alt="Artikel 2">
+        <div class="title" id="a2">Belajar HTML & CSS</div>
+        <div class="excerpt">Mempelajari dua bahasa dasar untuk membuat halaman web.</div>
+        <div class="tags">
+          <span class="tag">#css</span>
+          <span class="tag">#layout</span>
+        </div>
+        <a class="read" href="#">Baca selanjutnya</a>
+      </article>
+      <article class="card-article" aria-labelledby="a3">
+        <img src="ft3.png" class="img-fluid rounded mb-3" alt="Artikel 3">
+        <div class="title" id="a3">Tips Merapikan Kode untuk Tim</div>
+        <div class="excerpt">Praktik terbaik, linting, dan format untuk menjaga kualitas kode proyek bersama.</div>
+        <div class="tags">
+          <span class="tag">#team</span>
+          <span class="tag">#workflow</span>
+        </div>
+        <a class="read" href="#">Baca selanjutnya</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Hubungi Saya -->
+  <section id="hubungi" class="container my-5">
+    <div class="contact-section">
+      <div>
+        <h2>Hubungi Saya</h2>
+        <p>Ingin bekerja sama, bertanya, atau sekadar menyapa? Isi formulir ini atau gunakan informasi kontak di samping.</p>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Nama" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subjek">
+          <textarea name="message" placeholder="Pesan" required></textarea>
+          <button type="submit" class="btn-custom">Kirim Pesan</button>
+        </form>
+        <div id="preview" style="display:none;"></div>
+      </div>
+      <aside class="contact-right">
+        <h3>Info Kontak</h3>
+        <div class="info">
+          <div class="row">
+            <div class="icon">📧</div>
+            <div>
+              <div style="font-weight:600">Email</div>
+              <div class="small">rani05072021@gmail.com</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">📱</div>
+            <div>
+              <div style="font-weight:600">Telepon</div>
+              <div class="small">+62 878-4753-1716</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">📍</div>
+            <div>
+              <div style="font-weight:600">Lokasi</div>
+              <div class="small">Jember, Indonesia</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container text-center p-3">
+      <p class="mb-0">Dibuat oleh <b>Rizki Yunita Maharani</b></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const form = document.getElementById("contactForm");
+    const preview = document.getElementById("preview");
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      const data = new FormData(form);
+      preview.style.display = "block";
+      preview.innerHTML = `
+        <h5>📩 Data Formulir Terkirim:</h5>
+        <p><b>Nama:</b> ${data.get("name")}</p>
+        <p><b>Email:</b> ${data.get("email")}</p>
+        <p><b>Subjek:</b> ${data.get("subject")}</p>
+        <p><b>Pesan:</b> ${data.get("message")}</p>
+      `;
+      form.reset();
+    });
+  </script>
+</body>
+</html>
